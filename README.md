@@ -1,4 +1,6 @@
-# My TypeScript Project
+# React Summit 2024
+
+# AI Agent
 
 This is a Node.js project with TypeScript that implements an AI agent capable of using various tools to answer questions and perform tasks.
 
@@ -20,8 +22,8 @@ This is a Node.js project with TypeScript that implements an AI agent capable of
 1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/my-typescript-project.git
-   cd my-typescript-project
+   git clone https://github.com/idanrozin/react-summit-2024.git
+   cd react-summit-2024
    ```
 
 2. Install dependencies:
