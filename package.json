@@ -1,0 +1,57 @@
+{
+    "name": "my-typescript-project",
+    "version": "1.0.0",
+    "description": "A Node.js project with TypeScript",
+    "main": "dist/index.js",
+    "scripts": {
+        "start": "node dist/index.js",
+        "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+        "dev:googleSearch": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts -- googleSearch",
+        "dev:chatLLM": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts -- chatLLM",
+        "dev:runAgent": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts -- runAgent",
+        "dev:coding": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts -- coding",
+        "dev:multiTool": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts -- multiTool",
+        "build": "tsc",
+        "lint": "eslint . --ext .ts",
+        "format": "prettier --write \"src/**/*.ts\"",
+        "test": "jest",
+        "clean": "rimraf dist",
+        "prebuild": "npm run clean",
+        "prepare": "husky install"
+    },
+    "keywords": [
+        "nodejs",
+        "typescript",
+        "project"
+    ],
+    "author": "Your Name <your.email@example.com>",
+    "license": "MIT",
+    "engines": {
+        "node": ">=20.3.0"
+    },
+    "dependencies": {
+        "axios": "^1.7.7",
+        "dotenv": "^16.4.5"
+    },
+    "devDependencies": {
+        "@types/node": "^20.3.0",
+        "@typescript-eslint/eslint-plugin": "^5.59.0",
+        "@typescript-eslint/parser": "^5.59.0",
+        "eslint": "^8.38.0",
+        "husky": "^8.0.0",
+        "jest": "^29.5.0",
+        "nodemon": "^2.0.22",
+        "prettier": "^2.8.7",
+        "rimraf": "^5.0.0",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.0.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yourusername/my-typescript-project.git"
+    },
+    "bugs": {
+        "url": "https://github.com/yourusername/my-typescript-project/issues"
+    },
+    "homepage": "https://github.com/yourusername/my-typescript-project#readme"
+}
